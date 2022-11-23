@@ -201,6 +201,15 @@ nav #next {
     color: floralwhite;
 }
 
+#lightbox-head-menu {
+    display: flex;
+    justify-content: center;
+}
+
+#lightbox_title {
+    min-width: 30rem;
+}
+
 #lightbox_close {
     padding: 10px;
     font-size: 2rem;

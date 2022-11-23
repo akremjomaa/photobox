@@ -20,15 +20,19 @@
         <div id="lightbox">
             <div id="lightbox-head">
                 <span id="lightbox_close">X</span>
-                <h1 id="lightbox_title">titre photo</h1>
+                <div id="lightbox-head-menu">
+                    <button id="previous_photo">prev photo</button>
+                    <h1 id="lightbox_title">titre photo</h1>
+                    <button id="next_photo">next photo</button>
+                </div>
             </div>
             <div id="lightbox-main">
                 <div id="lightbox-content-img">
                   <div id="lightbox-img">
                      <img id="lightbox_full_img"
                      src="">
-                     <button id="previous_photo">prev photo</button>
-                     <button id="next_photo">next photo</button>
+
+
                    </div>
                 </div>
                 <div id="lightbox-content-comments">
@@ -68,6 +72,7 @@
 </main>
 
 <script type="module" src="lib/photobox.js"></script>
+
 
 
 </body>
