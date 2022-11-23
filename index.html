@@ -22,14 +22,39 @@
                 <span id="lightbox_close">X</span>
                 <h1 id="lightbox_title">titre photo</h1>
             </div>
-
-            <div id="lightbox-img">
-                <img id="lightbox_full_img"
+            <div id="lightbox-main">
+                <div id="lightbox-content-img">
+                  <div id="lightbox-img">
+                     <img id="lightbox_full_img"
                      src="">
                      <button id="previous_photo">prev photo</button>
                      <button id="next_photo">next photo</button>
+                   </div>
+                </div>
+                <div id="lightbox-content-comments">
+                    <div id="lightbox-comments-head">
+                        <h2>Commentaire :</h2>
+                    </div>
+                    <div id="lightbox-comments"></div>
+                    <div id="lightbox-add-comment">
+                        <form action="" method="get" id="lightbox-add-comment-form">
+                            <div class="form-element">
+                                <label for="pseudo">Pseudo: </label>
+                                <input type="text" name="pseudo" id="pseudo" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="titre">Titre: </label>
+                                <input type="text" name="titre" id="titre" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="message">Message: </label>
+                                <textarea name="message" id="message" required></textarea>
+                            </div>
+                            <button id="valid-comment" class="bg-success">valider</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-
             <div id="lightbox-foot">
                
                 <div id="lightbox-info">
@@ -43,6 +68,7 @@
 </main>
 
 <script type="module" src="lib/photobox.js"></script>
+
 
 </body>
 </html>
