@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/photobox.css">
+    <title>photobox</title>
+</head>
+<body>
+
+<nav class="nav">
+    <button id="load_gallery">load</button>
+    <button id="previous">prev page</button>
+    <button id="next">next page</button>
+</nav>
+
+
+<main id="gallery">
+    <div class="gallery-container" id="gallery_container"></div>
+    <div class="lightbox_container lightbox_container--hidden" id="lightbox_container">
+        <div id="lightbox">
+            <div id="lightbox-head">
+                <span id="lightbox_close">X</span>
+                <div id="lightbox-head-menu">
+                    <button id="previous_photo">prev photo</button>
+                    <h1 id="lightbox_title">titre photo</h1>
+                    <button id="next_photo">next photo</button>
+                </div>
+            </div>
+            <div id="lightbox-main">
+                <div id="lightbox-content-img">
+                  <div id="lightbox-img">
+                     <img id="lightbox_full_img"
+                     src="">
+
+
+                   </div>
+                </div>
+                <div id="lightbox-content-comments">
+                    <div id="lightbox-comments-head">
+                        <h2>Commentaire :</h2>
+                    </div>
+                    <div id="lightbox-comments"></div>
+                    <div id="lightbox-add-comment">
+                        <form action="" method="get" id="lightbox-add-comment-form">
+                            <div class="form-element">
+                                <label for="pseudo">Pseudo: </label>
+                                <input type="text" name="pseudo" id="pseudo" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="titre">Titre: </label>
+                                <input type="text" name="titre" id="titre" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="message">Message: </label>
+                                <textarea name="message" id="message" required></textarea>
+                            </div>
+                            <button id="valid-comment" class="bg-success">valider</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="lightbox-foot">
+               
+                <div id="lightbox-info">
+                    
+                    <p id="lightbox_resol">resolution</p>
+                    <p id="lightbox_desc">description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="module" src="lib/photobox.js"></script>
+
+
+
+</body>
+</html>
